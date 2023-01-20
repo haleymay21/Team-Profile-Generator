@@ -1,5 +1,5 @@
 const Manager = require("../lib/Manager");
-const Programmer = require("../lib/Programmer");
+const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");
 
 function generateCards(team) {
@@ -16,14 +16,14 @@ function generateCards(team) {
         );
         cards.push(generateManagerCard(manager));
         break;
-      case "Programmer":
-        const programmer = new Programmer(
+      case "Engineer":
+        const Engineer = new Engineer(
           teamArray.id,
           teamArray.name,
           teamArray.email,
           teamArray.github
         );
-        cards.push(generateProgrammerCard(programmer));
+        cards.push(generateEngineerCard(Engineer));
         break;
       case "Intern":
         const intern = new Intern(
@@ -55,18 +55,18 @@ let generateManagerCard = (Manager) => {
   </div>
   `;
 };
-let generateProgrammerCard = (Programmer) => {
+let generateEngineerCard = (Engineer) => {
   return `
   <div class="card m-1 shadow" style="width: 18rem">
     <div class='card-header'>
-      <h3 class="card-title">${Programmer.getName()}</h3>
-      <h6 class="card-text"><i class="fa fa-laptop"></i> ${Programmer.getRole()}</h6>
+      <h3 class="card-title">${Engineer.getName()}</h3>
+      <h6 class="card-text"><i class="fa fa-laptop"></i> ${Engineer.getRole()}</h6>
     </div>
     <div class="card-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">ID: ${Programmer.getId()}</li>
-        <li class="list-group-item">Email: <a href = "${Programmer.getEmail()}"> ${Programmer.getEmail()}</a></li>
-        <li class="list-group-item">GitHub: <a href = "${Programmer.getGithub()}"> ${Programmer.getGithub()}</a></li>
+        <li class="list-group-item">ID: ${Engineer.getId()}</li>
+        <li class="list-group-item">Email: <a href = "${Engineer.getEmail()}"> ${Engineer.getEmail()}</a></li>
+        <li class="list-group-item">GitHub: <a href = "${Engineer.getGithub()}"> ${Engineer.getGithub()}</a></li>
       </ul>
     </div>
   </div>

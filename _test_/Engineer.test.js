@@ -1,8 +1,8 @@
-const Programmer = require("../lib/Engineer");
+const Engineer = require("../lib/Engineer");
 
 test("Can create a github.", () => {
   const testGithub = "Haley";
-  const employeeInstance = new Programmer(
+  const employeeInstance = new Engineer(
     "Haley",
     1,
     "haley@techbiz.com",
@@ -13,7 +13,7 @@ test("Can create a github.", () => {
 
 test("Testing getGithub will return github.", () => {
   const testGithub = "GavinGetsIt";
-  const employeeInstance = new Programmer(
+  const employeeInstance = new Engineer(
     "Haley",
     1,
     "haley@techbiz.com",
@@ -23,8 +23,8 @@ test("Testing getGithub will return github.", () => {
 });
 
 test("Testing role.", () => {
-  const returnValue = "Programmer";
-  const employeeInstance = new Programmer(
+  const returnValue = "Engineer";
+  const employeeInstance = new Engineer(
     "Haley",
     1,
     "haley@techbiz.com",
