@@ -17,13 +17,13 @@ function generateCards(team) {
         cards.push(generateManagerCard(manager));
         break;
       case "Engineer":
-        const Engineer = new Engineer(
+        const engineer = new Engineer(
           teamArray.id,
           teamArray.name,
           teamArray.email,
           teamArray.github
         );
-        cards.push(generateEngineerCard(Engineer));
+        cards.push(generateEngineerCard(engineer));
         break;
       case "Intern":
         const intern = new Intern(
