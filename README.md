@@ -6,5 +6,5 @@ This application was created to generate an HTML webpage that displays the user 
 
 ### Screenshot and Video
 
-![Screenshot of the application]()
-![Video demonstration]()
+![Screenshot of the application](./assets/Screen%20Shot%202023-01-20%20at%202.27.10%20PM.png)
+![Video demonstration](./assets/module10.mp4)
